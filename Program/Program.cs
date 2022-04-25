@@ -16,6 +16,13 @@ namespace DateFormat
             return year.Substring(6) + "-" + year.Substring(3, 2) + "-" + year.Substring(0, 2);
         }
     }
+    public class TestDatenewFormat
+    {
+        public static String ChangenewFormat(String year)
+        {
+            return year.Substring(3, 2) + "-" + year.Substring(0, 2) + "-" + year.Substring(year.Length - 2);
+        }
+    }
     public class Program
     {
         public static void Main(string[] args)
